@@ -38,6 +38,11 @@ set showmatch
 
 set diffopt=filler,iwhite       " ignore all whitespace and sync
 
+set selectmode+=mouse
+set mouse=a
+
+set clipboard=unnamed
+
 nnoremap <C-g> :NERDTreeToggle<cr>
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 let NERDTreeHighlightCursorline=1
