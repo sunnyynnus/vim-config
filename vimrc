@@ -17,14 +17,18 @@ colorscheme molokai
 set number
 
 set autoindent smartindent      " turn on auto/smart indenting
+set expandtab                   " expand tab marks
 set smarttab                    " make <tab> and <backspace> smarter
-set tabstop=8                   " tabstops of 8
-set shiftwidth=8                " indents of 8
+set tabstop=4                   " tabstops of 4
+set shiftwidth=4                " indents of 4
 set backspace=eol,start,indent  " allow backspacing over indent, eol, & start
 set undolevels=1000             " number of forgivable mistakes
 set updatecount=100             " write swap file to disk every 100 chars
 set complete=.,w,b,u,U,t,i,d    " do lots of scanning on tab completion
 set viminfo=%100,'100,/100,h,\"500,:100,n~/.vim/viminfo
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 set ignorecase
 set smartcase
