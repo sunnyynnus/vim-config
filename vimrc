@@ -16,6 +16,7 @@ set cursorline
 colorscheme molokai
 set number
 
+set modeline
 set autoindent smartindent      " turn on auto/smart indenting
 set expandtab                   " expand tab marks
 set smarttab                    " make <tab> and <backspace> smarter
