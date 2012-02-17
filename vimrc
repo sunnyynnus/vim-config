@@ -13,9 +13,7 @@ elseif $TERM =~ '^xterm$'
 endif
 
 set cursorline
-colorscheme molokai
 set number
-
 set modeline                    " enable modelines
 set autoindent smartindent      " turn on auto/smart indenting
 set expandtab                   " expand tab marks
