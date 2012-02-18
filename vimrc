@@ -28,6 +28,8 @@ set updatecount=100             " write swap file to disk every 100 chars
 set complete=.,w,b,u,U,t,i,d    " do lots of scanning on tab completion
 set viminfo=%100,'100,/100,h,\"500,:100,n~/.vim/viminfo
 
+highlight Normal ctermbg=black ctermfg=darkgrey
+
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
