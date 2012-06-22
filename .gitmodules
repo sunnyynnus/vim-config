@@ -106,3 +106,6 @@
 [submodule "bundle/armasm"]
 	path = bundle/armasm
 	url = git://github.com/nviennot/vim-armasm.git
+[submodule "bundle/taghighlight"]
+	path = bundle/taghighlight
+	url = git://github.com/vim-scripts/TagHighlight.git

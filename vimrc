@@ -20,7 +20,7 @@ set modeline                    " enable modelines
 set autoindent smartindent      " turn on auto/smart indenting
 set expandtab                   " expand tab marks
 set smarttab                    " make <tab> and <backspace> smarter
-set tabstop=4                   " tabstops of 4
+set tabstop=8                   " tabstops of 8
 set shiftwidth=4                " indents of 4
 set backspace=eol,start,indent  " allow backspacing over indent, eol, & start
 set undolevels=1000             " number of forgivable mistakes
