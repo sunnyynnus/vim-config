@@ -2,3 +2,7 @@
 /viminfo
 /swap
 doc/tags
+.netrwhist
+/undo
+vimrc.mine
+gvimrc.mine
