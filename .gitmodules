@@ -77,3 +77,7 @@
 	path = bundle/powerline
 	url = git://github.com/nviennot/vim-powerline.git
 	ignore = dirty
+[submodule "bundle/ifdef-highlighting"]
+	path = bundle/ifdef-highlighting
+	url = git://github.com/vim-scripts/ifdef-highlighting
+	ignore = dirty

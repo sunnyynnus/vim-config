@@ -6,7 +6,6 @@ syn keyword cOperator likely unlikely __typeof__ __builtin_constant_p
 syn keyword cOperator BUG BUG_ON assert_spin_locked might_sleep WARN_ON WARN
 syn keyword cStorageClass __attribute__ __always_inline __user
 
-
 syn keyword cStorageClass __list_add list_add list_add_tail __list_del list_del list_replace list_replace_init list_del_init list_move list_move_tail list_is_last list_empty list_empty_careful list_rotate_left list_is_singular __list_cut_position list_cut_position __list_splice list_splice list_splice_tail list_splice_init list_splice_tail_init list_entry list_first_entry list_prepare_entry list_safe_reset_next hlist_unhashed hlist_empty __hlist_del hlist_del hlist_del_init hlist_add_head hlist_add_before hlist_add_after hlist_move_list hlist_entry
 syn keyword cRepeat list_for_each list_for_each_entry list_for_each_entry_continue list_for_each_entry_safe __list_for_each list_for_each_prev list_for_each_safe list_for_each_prev_safe list_for_each_entry_reverse list_for_each_entry_continue_reverse list_for_each_entry_from list_for_each_entry_safe_continue list_for_each_entry_safe_from list_for_each_entry_safe_reverse
 syn keyword cRepeat hlist_for_each hlist_for_each_safe hlist_for_each_entry hlist_for_each_entry_continue hlist_for_each_entry_from hlist_for_each_entry_safe
@@ -21,10 +20,6 @@ syn keyword cPreCondit read_lock read_unlock read_lock_irq read_unlock_irq
 syn keyword cPreCondit rcu_read_lock rcu_read_unlock
 syn keyword cPreCondit atomic_dec_and_lock
 
-syn keyword cPreCondit scribe_lock_file_no_inode scribe_lock_file_read scribe_lock_file_write scribe_lock_inode_read scribe_lock_inode_write scribe_lock_files_read scribe_lock_files_write scribe_unlock scribe_unlock_discard scribe_unlock_err scribe_lock_object scribe_lock_object_handle scribe_lock_hb scribe_lock_ipc scribe_lock_file_read_interruptible scribe_lock_file_write_interruptible scribe_lock_pid_read scribe_lock_pid_write scribe_unlock_pid scribe_unlock_pid_discard scribe_lock_ptrace_read scribe_lock_ptrace_write scribe_lock_current_cred_read scribe_lock_current_cred_write scribe_unlock_current_cred scribe_unlock_current_cred_discard scribe_lock_parentptr_read scribe_lock_parentptr_write scribe_downgrade scribe_lock_mmap_read scribe_lock_mmap_write scribe_lock_ppid_ptr_read scribe_lock_ppid_ptr_write scribe_lock_inode_write_nested
-
-syn keyword cOperator scribe_assert_locked
-
 syn keyword cPreCondit kmalloc vmalloc kfree vfree kzalloc __get_free_pages kmem_cache_alloc kmem_cache_free
 syn keyword cPreCondit up_write down_write up_read down_read down_read_nested down_write_nested
 
@@ -33,6 +28,15 @@ syn keyword cPreCondit rcu_synchronize schedule schedule_timeout
 syn keyword cConstant GFP_ZONEMASK GFP_NOWAIT GFP_ATOMIC GFP_NOIO GFP_NOFS GFP_KERNEL GFP_TEMPORARY GFP_USER GFP_HIGHUSER GFP_HIGHUSER_MOVABLE GFP_IOFS GFP_THISNODE GFP_THISNODE GFP_MOVABLE_MASK GFP_RECLAIM_MASK GFP_BOOT_MASK GFP_CONSTRAINT_MASK GFP_SLAB_BUG_MASK GFP_DMA GFP_DMA32 GFP_ZONE_TABLE GFP_ZONE_BAD
 
 syn keyword cConstant ERESTARTSYS ERESTARTNOINTR ERESTARTNOHAND ENOIOCTLCMD ERESTART_RESTARTBLOCK EDIVERGE ENODATA
+
+syn keyword cType struct enum
+syn match cType /ElfW(\w\+)/
+syn match cType /Elf\(32\|64\)\?_\w\+/
+
+syn match cPreProc /#\s*\(ifdef\|ifndef\|else\|elif\|endif\|define\|undef\)/
+syn match cPreProc /#\s*if\s\+[^0\s].*/
+
+syn keyword cStorageClass static inline auto __thread
 
 set nofoldenable
 set foldmethod=syntax
