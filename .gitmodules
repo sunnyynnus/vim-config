@@ -6,10 +6,6 @@
 	path = bundle/markdown
 	url = git://github.com/ujihisa/vim-markdown.git
 	ignore = dirty
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-	ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
@@ -17,30 +13,6 @@
 [submodule "bundle/abolish"]
 	path = bundle/abolish
 	url = git://github.com/tpope/vim-abolish.git
-	ignore = dirty
-[submodule "bundle/endwise"]
-	path = bundle/endwise
-	url = git://github.com/tpope/vim-endwise.git
-	ignore = dirty
-[submodule "bundle/repeat"]
-	path = bundle/repeat
-	url = git://github.com/tpope/vim-repeat.git
-	ignore = dirty
-[submodule "bundle/speeddating"]
-	path = bundle/speeddating
-	url = git://github.com/tpope/vim-speeddating.git
-	ignore = dirty
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = git://github.com/tpope/vim-surround.git
-	ignore = dirty
-[submodule "bundle/unimpaired"]
-	path = bundle/unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
-	ignore = dirty
-[submodule "bundle/xmledit"]
-	path = bundle/xmledit
-	url = git://github.com/sukima/xmledit.git
 	ignore = dirty
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
@@ -58,10 +30,6 @@
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular
 	ignore = dirty
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/nviennot/snipmate.vim.git
-	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
@@ -70,14 +38,6 @@
 	path = bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
 	ignore = dirty
-[submodule "bundle/quickfixsigns"]
-	path = bundle/quickfixsigns
-	url = git://github.com/tomtom/quickfixsigns_vim.git
-	ignore = dirty
-[submodule "bundle/tlib"]
-	path = bundle/tlib
-	url = git://github.com/tomtom/tlib_vim.git
-	ignore = dirty
 [submodule "bundle/l9"]
 	path = bundle/l9
 	url = git://github.com/vim-scripts/L9.git
@@ -85,10 +45,6 @@
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = git://github.com/vim-scripts/YankRing.vim.git
-	ignore = dirty
-[submodule "bundle/minibufexpl"]
-	path = bundle/minibufexpl
-	url = git://github.com/fholgado/minibufexpl.vim.git
 	ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
