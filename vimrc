@@ -15,14 +15,12 @@ if $TERM =~ '256color'
 elseif $TERM =~ '^xterm$'
   set t_Co=256
 endif
-colorscheme molokai
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 " Misc
 set modeline                    " enable modelines
-filetype plugin indent on       " Do filetype detection and load custom file plugins and indent files
 set hidden                      " Don't abandon buffers moved to the background
 set wildmenu                    " Enhanced completion hints in command line
 set backspace=eol,start,indent  " Allow backspacing over indent, eol, & start
@@ -34,8 +32,8 @@ set diffopt=filler,iwhite       " In diff mode, ignore whitespace changes and al
 " Indentation and tabbing
 set autoindent smartindent
 set smarttab                    " Make <tab> and <backspace> smarter
-set tabstop=8
-set shiftwidth=8                " Indents of 8 spaces
+set tabstop=3
+set shiftwidth=3                " Indents of 8 spaces
 
 " viminfo: remember certain things when we exit
 " (http://vimdoc.sourceforge.net/htmldoc/usr_21.html)
